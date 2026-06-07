@@ -6,14 +6,26 @@ LingoBreeze allows users to easily save vocabulary words they want to learn, tra
 
 ---
 
+## 📸 Screenshots
+
+| Empty State | Vocabulary List | Search & Sort |
+|:---:|:---:|:---:|
+| <img src="screenshots/SS1.jpeg" width="220" alt="Empty State" /> | <img src="screenshots/SS2.jpeg" width="220" alt="Vocabulary List" /> | <img src="screenshots/SS3.jpeg" width="220" alt="Search & Sort" /> |
+
+| Add Word Form | Success State | Error State |
+|:---:|:---:|:---:|
+| <img src="screenshots/SS4.jpeg" width="220" alt="Add Word Form" /> | <img src="screenshots/SS5.jpeg" width="220" alt="Success State" /> | <img src="screenshots/SS6.jpeg" width="220" alt="Error State" /> |
+
+---
+
 ## 🌟 Key Features
 
 ### 📱 Flutter Client
-- **Obsidian Dark Theme**: An immersive dark mode palette utilizing deep background shades, rich gradients, and electric indigo highlights.
-- **Glassmorphism & Micro-animations**: Elevated UI components with subtle borders, blur effects, and staggered entry animations for list cards.
-- **Clean Architecture**: Strict separation of concerns (Domain, Data, Presentation layers) enforcing testability and scalability.
-- **Riverpod 3.0 State Management**: Utilizes modern asynchronous notifier providers for predictable state propagation.
-- **Robust Networking**: Configured with timeouts, error handling, pull-to-refresh, and local logging.
+- **Breezy Light Theme & Quicksand Typography**: A bright, welcoming layout featuring comfortable pastel tones, primary blue accents (`#006398`), and the Quicksand font.
+- **Animated Empty State**: Displays a custom bird and nest illustration with a native floating animation when the vocabulary list is empty.
+- **Reactive Search & Sort**: Instant in-memory filtering by word, meaning, or translation, combined with custom sorting (Newest Added, Oldest Added, A-Z, Z-A).
+- **Morphing Bottom Sheets**: The "Add Word" flow transitions smoothly in-place between form entry, a checkmark success screen, and a diagnostic error screen.
+- **Clean Architecture**: Built on strict separation of concerns (Domain, Data, Presentation layers) to ensure code testability and clean Riverpod notifier flows.
 
 ### 🛡️ Node.js Express Backend
 - **Dual-Mode Firebase Integration**:
@@ -203,9 +215,6 @@ This happens if you haven't enabled the Firestore API in GCP or initialized Fire
 - If running on an **Android Emulator**, ensure your Flutter base URL is pointing to `http://10.0.2.2:3000` instead of `localhost`.
 - If running on a **Physical Device**, verify both the computer running the backend and the phone are on the exact same Wi-Fi network, and use your computer's local IP address (e.g., `http://192.168.1.XX:3000`).
 
----
 
-## 📜 Development Status
-- **Clean Architecture Implementation**: Completed (Ready for scale)
-- **Feature Completion**: 100% Core Requirements Met
-- **UI Styling**: Premium Dark Glassmorphism Theme (Completed)
+
+
