@@ -1,0 +1,66 @@
+# ====================================================================
+# Global Monorepo Git Ignore Rules
+# ====================================================================
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ====================================================================
+# Backend (Node.js + Firebase) Ignores
+# ====================================================================
+backend/node_modules/
+backend/.env
+backend/serviceAccountKey.json
+backend/firestore-debug.log
+
+# ====================================================================
+# Flutter Client Ignores
+# ====================================================================
+flutter-app/.dart_tool/
+flutter-app/.flutter-plugins
+flutter-app/.flutter-plugins-dependencies
+flutter-app/.pub-cache/
+flutter-app/.pub/
+flutter-app/build/
+flutter-app/coverage/
+
+# Android Studio / Gradle artifacts
+flutter-app/android/app/debug/
+flutter-app/android/app/profile/
+flutter-app/android/app/release/
+flutter-app/android/local.properties
+flutter-app/android/.gradle/
+flutter-app/android/app/src/main/res/mipmap-*/ic_launcher.png # If using generated icons
+
+# iOS artifacts
+flutter-app/ios/Flutter/ephemeral/
+flutter-app/ios/Flutter/Generated.xcconfig
+flutter-app/ios/Flutter/flutter_export_environment.sh
+flutter-app/ios/Flutter/.last_build_id
+flutter-app/ios/Pods/
+flutter-app/ios/.symlinks/
+flutter-app/ios/Flash/
